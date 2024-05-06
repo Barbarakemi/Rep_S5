@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 pandas 
 streamlit 
 plotly.express 
+=======
+pandas 
+streamlit 
+plotly.express 
+>>>>>>> 031fbd1dafd911c47375772b6fe3a84c6e984740
 nbformat
