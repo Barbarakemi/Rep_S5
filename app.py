@@ -28,20 +28,20 @@ scatter_button = st.button('Criar gráfico de dispersão')
 # Verificando qual botão foi clicado
 if hist_button:
     # Escrevendo uma mensagem
-    st.write('Criando um histograma para o conjunto de dados de anúncios de vendas de carros')
+         st.write('Criando um histograma para o conjunto de dados de anúncios de vendas de carros')
     
     # Criando um histograma
-    fig = px.histogram(car_data, x="odometer")
+         fig = px.histogram(car_data, x="odometer")
     
     # Exibindo um gráfico Plotly interativo
-    st.plotly_chart(fig, use_container_width=True)
+         st.plotly_chart(fig, use_container_width=True)
 
 if scatter_button:
     # Escrevendo uma mensagem
-    st.write('Criando um gráfico de dispersão para o conjunto de dados de anúncios de vendas de carros')
+         st.write('Criando um gráfico de dispersão para o conjunto de dados de anúncios de vendas de carros')
     
     # Criando um gráfico de dispersão
-    fig = px.scatter(car_data, x="year", y="price", color="manufacturer", size="odometer", hover_name="model", title="Car Price vs Year")
+         fig = px.scatter(car_data, x="year", y="price", color="manufacturer", size="odometer", hover_name="model", title="Car Price vs Year")
     
     # Exibindo um gráfico Plotly interativo
-    st.plotly_chart(fig, use_container_width=True)         
+         st.plotly_chart(fig, use_container_width=True)         
