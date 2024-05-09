@@ -22,8 +22,8 @@ if hist_button:  # se o botão for clicado
 car_data = pd.read_csv('vehicles.csv')
 
 # Criando botões para diferentes tipos de gráficos
-hist_button = st.button('Criar histograma')
-scatter_button = st.button('Criar gráfico de dispersão')
+hist_button = st.button('Criar histograma', key= "hist_button")
+scatter_button = st.button('Criar gráfico de dispersão', key= "scatter_button")
 
 # Verificando qual botão foi clicado
 if hist_button:
@@ -48,7 +48,7 @@ if scatter_button:
     st.plotly_chart(fig, use_container_width=True)
 
 # Adicionando a funcionalidade para excluir arquivos
-delete_button = st.button('Excluir arquivo')
+delete_button = st.button('Excluir arquivo', key= "delete_button")
 
 if delete_button:
     file_to_delete = st.text_input('Digite o nome do arquivo a ser excluído:', value='nome_do_arquivo.csv')
