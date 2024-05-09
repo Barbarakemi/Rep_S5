@@ -27,7 +27,7 @@ if scatter_button:
     st.write('Criando um gráfico de dispersão para o conjunto de dados de anúncios de vendas de carros')
 
     # Criando um gráfico de dispersão
-    fig = px.scatter(car_data, x="model_year", y="price", color="manufacturer", size="odometer", hover_name="model",
+    fig = px.scatter(car_data.dropna(), x="model_year", y="price", color="type", size="odometer", hover_name="model",
                      title="Car Price vs Year")
 
     # Exibindo um gráfico Plotly interativo
