@@ -19,7 +19,7 @@ if hist_button:  # se o botão for clicado
     st.plotly_chart(fig, use_container_width=True)
 
 # Lendo os dados
-car_data = pd.read_csv('vehicles_us.csv')
+car_data = pd.read_csv('vehicles.csv')
 
 # Criando botões para diferentes tipos de gráficos
 hist_button = st.button('Criar histograma')
